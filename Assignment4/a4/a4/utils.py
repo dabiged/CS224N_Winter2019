@@ -30,7 +30,7 @@ def pad_sents(sents, pad_token):
     ### YOUR CODE HERE (~6 Lines)
     # Find out the length of the each sentence. (Nx1)
     lens=[len(i) for i in sents]
-    max_len=max(lens) (Scalar)
+    max_len=max(lens) #(Scalar)
     #           input sentence append padd token to the max_len length
     # Nx(max_len) = max_len xlen(i)       len(i) x 1                             N
     sents_padded=[ sents[i] + [pad_token] * (max_len - lens[i]) for i in range(len(sents))]

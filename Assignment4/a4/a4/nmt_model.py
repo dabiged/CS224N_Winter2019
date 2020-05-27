@@ -254,7 +254,7 @@ class NMT(nn.Module):
         enc_hiddens_proj = self.att_projection(enc_hiddens)
         Y = self.model_embeddings.target(target_padded)
         for Y_t in torch.split(Y,1):
-            Ybar_t = torch.cat((torch.squeeze(Y_t),o_prev))
+            Ybar_t = torch.cat((torch.squeeze(Y_t),o_prev), dim=1)
             dec_state, o_t, e_t = self.step(Ybar_t, dec_state, enc_hiddens, enc_hiddens_proj, enc_masks)
             combined_outputs.append(o_t)
             o_prev = o_t
@@ -326,7 +326,7 @@ class NMT(nn.Module):
 
         # Set e_t to -inf where enc_masks has 1
         if enc_masks is not None:
-            e_t.data.masked_fill_(enc_masks.byte(), -float('inf'))
+            e_t.data.masked_fill_(enc_masks.bool(), -float('inf'))
 
         ### YOUR CODE HERE (~6 Lines)
         ### TODO:
