@@ -105,84 +105,19 @@ lounge.
 Below are 10 examples randomly chosen from the test set. I have made random choices to prevent any accusations of selection bias.
 
 
-
-Original Spanish:        Las tres palabras son: Se acuerda Ud.?
-
-Reference Translation:   The three words are:  Do you remember?
-
-This Work's Translation: The three words are `<unk>`
-
-
-
-Original Spanish:        Si te rodeas de las personas adecuadas, no solo te entendern, tambin te apreciarn.
-
-Reference Translation:   If you are surrounding yourself with the right people,  they will not only get it,  they will appreciate it.
-
-This Work's Translation: If you get away from the right people, not just `<unk>` you will be `<unk>`
-
-
-
-Original Spanish:        Muchas gracias.
-
-
-Reference Translation:   Thank you very much.
-
-This Work's Translation: Thank you very much.
-
-
-
-Original Spanish:        Lo que vemos es un pequeo pedacito de metal, con forma de trampoln y que sobresale apoyado en una plataforma.
-
-Reference Translation:   So what we're looking at is a little chunk of metal,  and it's shaped like a diving board, and it's sticking out over a ledge.
-
-This Work's Translation: What we see is a little bit of metal little little bit of metal shape, and which is `<unk>` on a platform.
-
-
-
-Original Spanish:        Y juntos llegamos a darnos cuenta de que todos estamos juntos en esto, que esta ilusin de que somos diferentes, estos conceptos de los pases, de las fronteras, de la religin, no funciona.
-
-Reference Translation:   And you come together to realize that we're all in this together,  that this delusion of difference --  this idea of countries, of borders, of religion -- doesn't work.
-
-This Work's Translation: And together we get to realize that we're all together in this, that this illusion that we are different, these concepts of the countries, of the borders, it doesn't work.
-
-
-Original Spanish:        Soy un fracaso como mujer y como feminista.
-
-Reference Translation:   I am failing as a woman,  I am failing as a feminist.
-
-This Work's Translation: I'm a failure as a woman, and as a feminist.
-
-
-
-Original Spanish:        Le dije que s.
-
-Reference Translation:   And I said, "Yes."
-
-This Work's Translation: I said yes.
-
-
-
-Original Spanish:        Para m, Afganistn es un pas de esperanza y posibilidades ilimitadas, y cada da las nias de SOLA me lo recuerdan.
-
-Reference Translation:   To me, Afghanistan is a country of hope and boundless possibilities,  and every single day  the girls of SOLA remind me of that.
-
-This Work's Translation: For me, Afghanistan is a country of hope and possibilities -- and every day girls in `<unk>` I would get it.
-
-
-
-Original Spanish:        Estas mujeres se reunan simplemente para hablar.
-
-Reference Translation:   And these women would get together and just talk.
-
-This Work's Translation: These women were getting together just to speak.
-
-
-
-Original Spanish:        Tenemos que ayudar a nuestros adolescentes a desarrollar estrategias para superar la presin de las imgenes perfectas y construir su autoestima.
-
-Reference Translation:   We have to help our teenagers develop  strategies to overcome image-related pressures  and build their self-esteem.
-
-This Work's Translation: We have to help our teens develop strategies to overcome the pressure of perfect images and build their self-esteem.
+Original Spanish |Reference Translation | This Translation
+--- | --- | ---
+Las tres palabras son: Se acuerda Ud.? |The three words are:  Do you remember? | The three words are `<unk>`
+Si te rodeas de las personas adecuadas, no solo te entendern, tambin te apreciarn.|If you are surrounding yourself with the right people,  they will not only get it,  they will appreciate it.|If you get away from the right people, not just `<unk>` you will be `<unk>`
+Muchas gracias.|Thank you very much.|Thank you very much.
+Lo que vemos es un pequeo pedacito de metal, con forma de trampoln y que sobresale apoyado en una plataforma.|So what we're looking at is a little chunk of metal,  and it's shaped like a diving board, and it's sticking out over a ledge.
+What we see is a little bit of metal little little bit of metal shape, and which is `<unk>` on a platform.|Y juntos llegamos a darnos cuenta de que todos estamos juntos en esto, que esta ilusin de que somos diferentes, estos conceptos de los pases, de las fronteras, de la religin, no funciona.
+And you come together to realize that we're all in this together,  that this delusion of difference --  this idea of countries, of borders, of religion -- doesn't work.|And together we get to realize that we're all together in this, that this illusion that we are different, these concepts of the countries, of the borders, it doesn't work.
+Soy un fracaso como mujer y como feminista.|I am failing as a woman,  I am failing as a feminist.|I'm a failure as a woman, and as a feminist.
+Le dije que s.|And I said, "Yes."|I said yes.
+Para m, Afganistn es un pas de esperanza y posibilidades ilimitadas, y cada da las nias de SOLA me lo recuerdan.|To me, Afghanistan is a country of hope and boundless possibilities,  and every single day  the girls of SOLA remind me of that.|For me, Afghanistan is a country of hope and possibilities -- and every day girls in `<unk>` I would get it.
+Estas mujeres se reunan simplemente para hablar.|And these women would get together and just talk.|These women were getting together just to speak.
+Tenemos que ayudar a nuestros adolescentes a desarrollar estrategias para superar la presin de las imgenes perfectas y construir su autoestima.|We have to help our teenagers develop  strategies to overcome image-related pressures  and build their self-esteem.|We have to help our teens develop strategies to overcome the pressure of perfect images and build their self-esteem.
 
 
 
