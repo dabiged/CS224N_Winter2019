@@ -84,10 +84,10 @@ task | statement
 
 
 
-### Example 6
+### Example 7
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
-Le encontramos un lugar, la internamos, y la cuidamos y nos encargamos de su familia, porque era necesario, |We found her one, we got her there,  and we took care of her  and watched over her family,  because it was necessary. | We found one place, the <unk> and the <unk> and <unk> of his family, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary,
+Le encontramos un lugar, la internamos, y la cuidamos y nos encargamos de su familia, porque era necesario, |We found her one, we got her there,  and we took care of her  and watched over her family,  because it was necessary. | We found one place, the `<unk>` and the `<unk>` and `<unk>` of his family, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary,
 
 task | statement
 --- | ---
@@ -96,9 +96,10 @@ task | statement
 *Describe a way to alter the NMT to fix the error:* | I have no idea ?!?!
 
 
+### Example 8
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
-Antes de que saliera "Rain Man" en 1988, solo un pequeo crculo, encarnado por expertos saba qu era el autismo, pero tras la inolvidable actuacin de Dustin Hoffman como Raymond Babbitt y el reconocimiento de "Rain Man" con 4 premios de la Academia, pediatras, psiclogos, maestros y padres de todo el mundo saban qu era el autismo. |Before "Rain Man" came out in 1988,  only a tiny, ingrown circle of experts knew what autism looked like,  but after Dustin Hoffman's unforgettable performance as Raymond Babbitt  earned "Rain Man" four Academy Awards,  pediatricians, psychologists,  teachers and parents all over the world knew what autism looked like. | Before I went out of <unk> <unk> in 1988, only a small circle, <unk> by experts knew what autism was but after the <unk> performance of <unk> <unk> as <unk> <unk> and <unk> <unk> with four awards from <unk> <unk> psychologists, teachers and parents all over the world knew what autism was. 
+Antes de que saliera "Rain Man" en 1988, solo un pequeo crculo, encarnado por expertos saba qu era el autismo, pero tras la inolvidable actuacin de Dustin Hoffman como Raymond Babbitt y el reconocimiento de "Rain Man" con 4 premios de la Academia, pediatras, psiclogos, maestros y padres de todo el mundo saban qu era el autismo. |Before "Rain Man" came out in 1988,  only a tiny, ingrown circle of experts knew what autism looked like,  but after Dustin Hoffman's unforgettable performance as Raymond Babbitt  earned "Rain Man" four Academy Awards,  pediatricians, psychologists,  teachers and parents all over the world knew what autism looked like. | Before I went out of `<unk>` `<unk>` in 1988, only a small circle, `<unk>` by experts knew what autism was but after the `<unk>` performance of `<unk>` `<unk>` as `<unk>` `<unk>` and `<unk>` `<unk>` with four awards from `<unk>` `<unk>` psychologists, teachers and parents all over the world knew what autism was. 
 
 task | statement
 --- | ---
