@@ -5,7 +5,7 @@ Note: Heavily inspired by the https://github.com/pcyin/pytorch_nmt repository
 
 **Analysing Errors in translation and how to fix them:**
 
-
+### Example 1
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
 Aquı́ otro de mis favoritos, “La noche estrellada”. | So another one of my favorites, “The Starry Night”. | Here’s another favorite of my favorites, “The Starry Night”.
@@ -17,6 +17,7 @@ task | statement
 *Provide a reason why the error occurred:*	 |I think when translating 'aqui otro' is has gone looking for a noun and found 'favorite' then it has translated 'de mis favoritos' literally.
 *Describe a way to alter the NMT to fix the error:*| Alter the beam search algorithm to penalise repeated words.
 
+### Example 2
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
 Ustedes saben que lo que yo hago es escribir para los niños, y, de hecho, probablemente soy el autor para niños, ms ledo en los EEUU. |  You know, what I do is write for children, and I’m probably America’s most widely read children’s author, in fact. | You know what I do is write for children, and in fact, I’m probably the author for children, more reading in the U.S.
@@ -28,6 +29,7 @@ task | statement
 *Describe a way to alter the NMT to fix the error:* | ???
 
 
+### Example 3
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
 Un amigo me hizo eso – Richard Bolingbroke. | A friend of mine did that – Richard Bolingbroke. | A friend of mine did that – Richard `<unk>`
@@ -37,10 +39,10 @@ task | statement
 --- | ---
 *Identify the Error:*				 |The word Bolingbroke is not a token in either language embedding dictionary.
 *Provide a reason why the error occurred:*	 |This is an uncommon word.
-
 *Describe a way to alter the NMT to fix the error:* |Either copy unknown words as they exist or design a leter-by-letter translator for unknown words.
 
 
+### Example 4
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
 Solo tienes que dar vuelta a la manzana para verlo como una epifanı́a.| You’ve just got to go around the block to see it as an epiphany. | You just have to go back to the apple to see it as a epiphany.
@@ -54,6 +56,7 @@ task | statement
 
 
 
+### Example 5
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
 Ella salvó mi vida al permitirme entrar al baño de la sala de profesores. | She saved my life by letting me go to the bathroom in the teachers’ lounge.| She saved my life by letting me go to the bathroom in the women’s room.
@@ -67,6 +70,7 @@ task | statement
 
 
 
+### Example 6
 Original Spanish | Reference Translation | NMT Translation
 --- | --- | ---
 Eso es más de 100,000 hectáreas.| That’s more than 250 thousand acres.| That’s over 100,000 acres.
@@ -80,7 +84,27 @@ task | statement
 
 
 
+### Example 6
+Original Spanish | Reference Translation | NMT Translation
+--- | --- | ---
+Le encontramos un lugar, la internamos, y la cuidamos y nos encargamos de su familia, porque era necesario, |We found her one, we got her there,  and we took care of her  and watched over her family,  because it was necessary. | We found one place, the <unk> and the <unk> and <unk> of his family, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary, because it was necessary,
 
+task | statement
+--- | ---
+*Identify the Error:*				 | Obvious repetition
+*Provide a reason why the error occurred:*	 | This sentence contains repeated use of the word `her`
+*Describe a way to alter the NMT to fix the error:* | I have no idea ?!?!
+
+
+Original Spanish | Reference Translation | NMT Translation
+--- | --- | ---
+Antes de que saliera "Rain Man" en 1988, solo un pequeo crculo, encarnado por expertos saba qu era el autismo, pero tras la inolvidable actuacin de Dustin Hoffman como Raymond Babbitt y el reconocimiento de "Rain Man" con 4 premios de la Academia, pediatras, psiclogos, maestros y padres de todo el mundo saban qu era el autismo. |Before "Rain Man" came out in 1988,  only a tiny, ingrown circle of experts knew what autism looked like,  but after Dustin Hoffman's unforgettable performance as Raymond Babbitt  earned "Rain Man" four Academy Awards,  pediatricians, psychologists,  teachers and parents all over the world knew what autism looked like. | Before I went out of <unk> <unk> in 1988, only a small circle, <unk> by experts knew what autism was but after the <unk> performance of <unk> <unk> as <unk> <unk> and <unk> <unk> with four awards from <unk> <unk> psychologists, teachers and parents all over the world knew what autism was. 
+
+task | statement
+--- | ---
+*Identify the Error:*				 | Lots of `<unk>`s in the translation
+*Provide a reason why the error occurred:*	 | A lot of out of vocabulary words.
+*Describe a way to alter the NMT to fix the error:* | Expand vocabulary or modify NMT to copy unknown words over.
 
 # Examples from this NMT
 
