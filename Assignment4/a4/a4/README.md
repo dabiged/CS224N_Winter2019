@@ -33,7 +33,7 @@ Note: Heavily inspired by the https://github.com/pcyin/pytorch_nmt repository
 
 **Reference Translation:** A friend of mine did that – Richard Bolingbroke.
 
-**NMT Translation:** A friend of mine did that – Richard <unk >
+**NMT Translation:** A friend of mine did that – Richard `<unk>`
 
 
 *Identify the Error:*				 The word Bolingbroke is not a token in either language embedding dictionary.
@@ -110,7 +110,7 @@ Original Spanish:        Las tres palabras son: Se acuerda Ud.?
 
 Reference Translation:   The three words are:  Do you remember?
 
-This Work's Translation: The three words are <unk>
+This Work's Translation: The three words are `<unk>`
 
 
 
@@ -118,7 +118,7 @@ Original Spanish:        Si te rodeas de las personas adecuadas, no solo te ente
 
 Reference Translation:   If you are surrounding yourself with the right people,  they will not only get it,  they will appreciate it.
 
-This Work's Translation: If you get away from the right people, not just <unk> you will be <unk>
+This Work's Translation: If you get away from the right people, not just `<unk>` you will be `<unk>`
 
 
 
@@ -135,7 +135,7 @@ Original Spanish:        Lo que vemos es un pequeo pedacito de metal, con forma 
 
 Reference Translation:   So what we're looking at is a little chunk of metal,  and it's shaped like a diving board, and it's sticking out over a ledge.
 
-This Work's Translation: What we see is a little bit of metal little little bit of metal shape, and which is <unk> on a platform.
+This Work's Translation: What we see is a little bit of metal little little bit of metal shape, and which is `<unk>` on a platform.
 
 
 
@@ -166,7 +166,7 @@ Original Spanish:        Para m, Afganistn es un pas de esperanza y posibilidade
 
 Reference Translation:   To me, Afghanistan is a country of hope and boundless possibilities,  and every single day  the girls of SOLA remind me of that.
 
-This Work's Translation: For me, Afghanistan is a country of hope and possibilities -- and every day girls in <unk> I would get it.
+This Work's Translation: For me, Afghanistan is a country of hope and possibilities -- and every day girls in `<unk>` I would get it.
 
 
 
