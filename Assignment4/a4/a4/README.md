@@ -92,8 +92,8 @@ Le encontramos un lugar, la internamos, y la cuidamos y nos encargamos de su fam
 task | statement
 --- | ---
 *Identify the Error:*				 | Obvious repetition
-*Provide a reason why the error occurred:*	 | This sentence contains repeated use of the word `her`
-*Describe a way to alter the NMT to fix the error:* | I have no idea ?!?!
+*Provide a reason why the error occurred:*	 | This sentence terminates with a comma. The NMT is expecting something else to come after it and get stuck in a loop.
+*Describe a way to alter the NMT to fix the error:* | Fix the input data
 
 
 ### Example 8
